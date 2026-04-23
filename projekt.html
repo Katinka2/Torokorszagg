@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Törökország - MEGA Oldal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    font-size:14px;
+}
+
+nav a:hover{color:#ff9800;}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b') center/cover;
+}
+
+.hero h1{
+    font-size:60px;
+    background:linear-gradient(90deg,#ff9800,#ff3d00);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero p{font-size:20px;margin-top:20px;}
+
+/* SECTION */
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* CARD */
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    padding:20px;
+    margin:20px 0;
+    backdrop-filter:blur(15px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    background:rgba(255,255,255,0.2);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* ANIMATION */
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:1s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.7);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#info">Infó</a>
+<a href="#foldrajz">Földrajz</a>
+<a href="#varosok">Városok</a>
+<a href="#tortenelem">Történelem</a>
+<a href="#gazdasag">Gazdaság</a>
+<a href="#kultura">Kultúra</a>
+<a href="#etelek">Ételek</a>
+<a href="#sport">Sport</a>
+<a href="#allatok">Állatok</a>
+<a href="#erdekesseg">Fun</a>
+</nav>
+
+<div class="hero">
+<div>
+<h1>Törökország</h1>
+<p>Az egyik legizgalmasabb ország a világon</p>
+</div>
+</div>
+
+<section id="info" class="fade">
+<h2>Alap információk</h2>
+<div class="card">
+<p>📍 Elhelyezkedés: Európa + Ázsia</p>
+<p>🏙️ Főváros: Ankara</p>
+<p>👥 Lakosság: ~85 millió</p>
+<p>💰 Pénznem: török líra</p>
+<p>🗣️ Nyelv: török</p>
+<p>🕌 Vallás: főként iszlám</p>
+</div>
+</section>
+
+<section id="foldrajz" class="fade">
+<h2>Földrajz</h2>
+<div class="card">
+<p>Törökország nagyon változatos:</p>
+<p>🏔️ Hegyek (pl. Taurus)</p>
+<p>🌊 Tengerek: Fekete-tenger, Égei-tenger, Földközi-tenger</p>
+<p>🏜️ Félsivatagos területek</p>
+<p>🌋 Vulkanikus tájak (Kappadókia)</p>
+</div>
+</section>
+
+<section id="varosok" class="fade">
+<h2>Fontos városok</h2>
+<div class="grid">
+<div class="card"><h3>Isztambul</h3><p>Legnagyobb város, történelmi központ.</p></div>
+<div class="card"><h3>Ankara</h3><p>Főváros, politikai központ.</p></div>
+<div class="card"><h3>Izmir</h3><p>Modern kikötőváros.</p></div>
+<div class="card"><h3>Antalya</h3><p>Turizmus központ.</p></div>
+</div>
+</section>
+
+<section id="tortenelem" class="fade">
+<h2>Történelem</h2>
+<div class="card">
+<p>Ősi civilizációk → Oszmán Birodalom → modern állam.</p>
+<p>Atatürk reformjai modernizálták az országot.</p>
+</div>
+</section>
+
+<section id="gazdasag" class="fade">
+<h2>Gazdaság</h2>
+<div class="card">
+<p>📈 Fő iparágak:</p>
+<p>- turizmus</p>
+<p>- mezőgazdaság</p>
+<p>- autóipar</p>
+<p>- textilipar</p>
+<p>🛍️ Híres piacok és bazárok</p>
+</div>
+</section>
+
+<section id="kultura" class="fade">
+<h2>Kultúra</h2>
+<div class="card">
+<p>🎭 Tradíciók és modern élet keveredése</p>
+<p>🎶 Hagyományos zene</p>
+<p>🕌 Vallási építészet</p>
+<p>🧵 Szőnyegek és kézművesség</p>
+</div>
+</section>
+
+<section id="etelek" class="fade">
+<h2>Ételek</h2>
+<div class="grid">
+<div class="card"><h3>Kebab</h3></div>
+<div class="card"><h3>Baklava</h3></div>
+<div class="card"><h3>Döner</h3></div>
+<div class="card"><h3>Török tea</h3></div>
+</div>
+</section>
+
+<section id="sport" class="fade">
+<h2>Sport</h2>
+<div class="card">
+<p>⚽ Futball nagyon népszerű</p>
+<p>🏀 Kosárlabda is erős</p>
+<p>🏆 Nagy klubok: Galatasaray, Fenerbahce</p>
+</div>
+</section>
+
+<section id="allatok" class="fade">
+<h2>Állatvilág</h2>
+<div class="card">
+<p>🐺 Farkasok</p>
+<p>🦅 Sasok</p>
+<p>🐻 Medvék</p>
+<p>🐐 Hegyi kecskék</p>
+</div>
+</section>
+
+<section id="erdekesseg" class="fade">
+<h2>Érdekességek</h2>
+<div class="card">
+<p>☕ Török kávé UNESCO örökség</p>
+<p>🕌 Több mint 80 000 mecset</p>
+<p>🏛️ Göbekli Tepe nagyon régi</p>
+<p>🌉 Isztambul két kontinensen van</p>
+</div>
+</section>
+
+<footer>
+<p>🔥 MEGA modern Törökország oldal | 2026</p>
+</footer>
+
+<script>
+const faders=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+faders.forEach(el=>{
+const top=el.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+el.classList.add('show');
+}
+});
+});
+</script>
+
+</body>
+</html>
